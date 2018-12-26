@@ -63,4 +63,17 @@ main {
     width: 200px;
     text-align: center;
   }
+  .friends-list img {
+    width: 130px;
+    height: 130px;
+    border-radius: 50%;
+  }
+}
+
+@media screen and (min-width: 750px) {
+  .friends-list img {
+    width: 160px;
+    height: 160px;
+    border-radius: 50%;
+  }
 }
