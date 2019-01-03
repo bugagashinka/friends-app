@@ -6,138 +6,90 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge" />
     <title>Friends App</title>
     <link rel="stylesheet" href="styles/main.css" />
+    <link
+      rel="stylesheet"
+      href="https://use.fontawesome.com/releases/v5.6.3/css/all.css"
+    />
   </head>
   <body>
     <head></head>
-    <nav id="side-menu"></nav>
-    <main>
-      <section class="content">
-        <ul class="friends-list">
-          <li class="person">
-            <img src="img/kyiv/1-min.jpg" />
-            <div class="info">
-              <span>SEX</span> <a>Aaron Duval</a> <span>Ottawa</span>
-              <p class="details">
-                <span class="">I have 57 years old.</span>
-                <span>blablabla@gmail.com</span> <span>03-85-36-65-85</span>
-              </p>
-            </div>
-          </li>
-          <li class="person">
-            <img src="img/kyiv/2-min.jpg" />
-            <div class="info">
-              <span>SEX</span> <a>Aaron Duval</a> <span>Ottawa</span>
-              <p class="details">
-                <span class="">I have 57 years old.</span>
-                <span>blablabla@gmail.com</span> <span>03-85-36-65-85</span>
-              </p>
-            </div>
-          </li>
-          <li class="person">
-            <img src="img/kyiv/3-min.jpg" />
-            <div class="info">
-              <span>SEX</span> <a>Aaron Duval</a> <span>Ottawa</span>
-              <p class="details">
-                <span class="">I have 57 years old.</span>
-                <span>blablabla@gmail.com</span> <span>03-85-36-65-85</span>
-              </p>
-            </div>
-          </li>
-          <li class="person">
-            <img src="img/kyiv/4-min.jpg" />
-            <div class="info">
-              <span>SEX</span> <a>Aaron Duval</a> <span>Ottawa</span>
-              <p class="details">
-                <span class="">I have 57 years old.</span>
-                <span>blablabla@gmail.com</span> <span>03-85-36-65-85</span>
-              </p>
-            </div>
-          </li>
-          <li class="person">
-            <img src="img/kyiv/1-min.jpg" />
-            <div class="info">
-              <span>SEX</span> <a>Aaron Duval</a> <span>Ottawa</span>
-              <p class="details">
-                <span class="">I have 57 years old.</span>
-                <span>blablabla@gmail.com</span> <span>03-85-36-65-85</span>
-              </p>
-            </div>
-          </li>
-          <li class="person">
-            <img src="img/kyiv/2-min.jpg" />
-            <div class="info">
-              <span>SEX</span> <a>Aaron Duval</a> <span>Ottawa</span>
-              <p class="details">
-                <span class="">I have 57 years old.</span>
-                <span>blablabla@gmail.com</span> <span>03-85-36-65-85</span>
-              </p>
-            </div>
-          </li>
-          <li class="person">
-            <img src="img/kyiv/3-min.jpg" />
-            <div class="info">
-              <span>SEX</span> <a>Aaron Duval</a> <span>Ottawa</span>
-              <p class="details">
-                <span class="">I have 57 years old.</span>
-                <span>blablabla@gmail.com</span> <span>03-85-36-65-85</span>
-              </p>
-            </div>
-          </li>
-          <li class="person">
-            <img src="img/kyiv/4-min.jpg" />
-            <div class="info">
-              <span>SEX</span> <a>Aaron Duval</a> <span>Ottawa</span>
-              <p class="details">
-                <span class="">I have 57 years old.</span>
-                <span>blablabla@gmail.com</span> <span>03-85-36-65-85</span>
-              </p>
-            </div>
-          </li>
-          <li class="person">
-            <img src="img/kyiv/1-min.jpg" />
-            <div class="info">
-              <span>SEX</span> <a>Aaron Duval</a> <span>Ottawa</span>
-              <p class="details">
-                <span class="">I have 57 years old.</span>
-                <span>blablabla@gmail.com</span> <span>03-85-36-65-85</span>
-              </p>
-            </div>
-          </li>
-          <li class="person">
-            <img src="img/kyiv/2-min.jpg" />
-            <div class="info">
-              <span>SEX</span> <a>Aaron Duval</a> <span>Ottawa</span>
-              <p class="details">
-                <span class="">I have 57 years old.</span>
-                <span>blablabla@gmail.com</span> <span>03-85-36-65-85</span>
-              </p>
-            </div>
-          </li>
-          <li class="person">
-            <img src="img/kyiv/3-min.jpg" />
-            <div class="info">
-              <span>SEX</span> <a>Aaron Duval</a> <span>Ottawa</span>
-              <p class="details">
-                <span class="">I have 57 years old.</span>
-                <span>blablabla@gmail.com</span> <span>03-85-36-65-85</span>
-              </p>
-            </div>
-          </li>
-          <li class="person">
-            <img src="img/kyiv/4-min.jpg" />
-            <div class="info">
-              <span>SEX</span> <a>Aaron Duval</a> <span>Ottawa</span>
-              <p class="details">
-                <span class="">I have 57 years old.</span>
-                <span>blablabla@gmail.com</span> <span>03-85-36-65-85</span>
-              </p>
-            </div>
-          </li>
-        </ul>
+    <main class="wrapper">
+      <section id="filter">
+        <h2>Filter:</h2>
+        <hr />
+        <div class="search">
+          <input type="search" placeholder="Search" size="30" />
+          <select class="search-by" id="search-type">
+            <option>Name</option>
+            <option>Email</option>
+            <option>City</option>
+          </select>
+        </div>
+        <div class="filter-sex">
+          <button type="button" value="male" class="filter-male">male</button>
+          <button type="button" value="female" class="filter-female">
+            female
+          </button>
+          <button type="button" value="all" class="filter-all checked">
+            all
+          </button>
+        </div>
+        <div class="filter-age">
+          <h3>
+            Age: <span class="min value">21-</span
+            ><span class="max value"></span>
+          </h3>
+          <input type="range" min="21" max="75" value="75" id="age-range" />
+        </div>
+        <h2>Order:</h2>
+        <hr />
+        <div class="filter-order">
+          <div class="order-name">
+            <h3>Name:</h3>
+            <label class="container"
+              >a-Z<input
+                type="radio"
+                name="order"
+                value="name-asc"
+                class="checked"
+              />
+              <span class="checkmark"></span>
+            </label>
+            <label class="container"
+              >Z-a<input type="radio" name="order" value="name-desc" />
+              <span class="checkmark"></span>
+            </label>
+          </div>
+          <div class="order-age">
+            <h3>Age:</h3>
+            <label class="container"
+              >↑<input type="radio" name="order" value="age-asc" />
+              <span class="checkmark"></span>
+            </label>
+            <label class="container"
+              >↓<input type="radio" name="order" value="age-desc" />
+              <span class="checkmark"></span>
+            </label>
+          </div>
+          <div class="order-date">
+            <h3>Date:</h3>
+            <label class="container"
+              >↑<input type="radio" name="order" value="date-asc" />
+              <span class="checkmark"></span>
+            </label>
+            <label class="container"
+              >↓<input type="radio" name="order" value="date-desc" />
+              <span class="checkmark"></span>
+            </label>
+          </div>
+        </div>
       </section>
+      <section class="content"><ul id="friends-list"></ul></section>
     </main>
     <footer></footer>
 
+    <script src="js/components/FiltersContainer.js"></script>
+    <script src="js/components/FriendsList.js"></script>
     <script src="js/main.js"></script>
   </body>
 </html>
